@@ -1,0 +1,76 @@
+{
+    "lasso": {
+        "alpha": 0.01
+    },
+    "ridge": {
+        "alpha": 0.2
+    },
+    "es_net": {
+        "alpha": 0.41,
+        "l1_ratio": 0.2439
+    },
+    "svr": {
+        "kernel": "rbf",
+        "C": 5,
+        "gamma": 0.1
+    },
+    "rf": {
+        "n_estimators": 100,
+        "max_depth": 15,
+        "random_state": 3
+    },
+    "gpr": {
+        "WhiteKernel": 0.05,
+        "ConstantKernel": 1,
+        "Kernel": "DotProduct",
+        "Params": [
+            0.5
+        ]
+    },
+    "ann_1": {
+        "dims": [
+            16,
+            12,
+            8,
+            4,
+            1
+        ],
+        "learning_rate": 0.005,
+        "activation": "Tanh",
+        "batch_size": 1,
+        "epoch": 799,
+        "random_state": 165
+    },
+    "ann_2": {
+        "dims": [
+            16,
+            32,
+            64,
+            32,
+            16,
+            8,
+            1
+        ],
+        "learning_rate": 0.005,
+        "activation": "Tanh",
+        "batch_size": 4,
+        "max_epoch": 974,
+        "random_state": 102
+    },
+    "ann_3": {
+        "dims": [
+            16,
+            32,
+            64,
+            32,
+            16,
+            8,
+            1
+        ],
+        "learning_rate": 0.005,
+        "activation": "ReLU",
+        "batch_size": 4,
+        "max_epoch": 202,
+        "random_state": 215
+    }
+}
