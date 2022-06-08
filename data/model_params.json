@@ -5,9 +5,9 @@
     "ridge": {
         "alpha": 0.2
     },
-    "es_net": {
+    "esnet": {
         "alpha": 0.41,
-        "l1_ratio": 0.2439
+        "l1_ratio": 0.02439
     },
     "svr": {
         "kernel": "rbf",
@@ -23,9 +23,9 @@
         "WhiteKernel": 0.05,
         "ConstantKernel": 1,
         "Kernel": "DotProduct",
-        "Params": [
-            0.5
-        ]
+        "kernel_params": {
+            "sigma_0": 0.5
+        }
     },
     "ann_1": {
         "dims": [
@@ -54,7 +54,7 @@
         "learning_rate": 0.005,
         "activation": "Tanh",
         "batch_size": 4,
-        "max_epoch": 974,
+        "epoch": 974,
         "random_state": 102
     },
     "ann_3": {
@@ -70,7 +70,7 @@
         "learning_rate": 0.005,
         "activation": "ReLU",
         "batch_size": 4,
-        "max_epoch": 202,
+        "epoch": 202,
         "random_state": 215
     }
 }
