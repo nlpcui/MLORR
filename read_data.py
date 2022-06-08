@@ -265,17 +265,6 @@ class DataProcessor:
             return self.__normalize_array([unormalized_feature], mean=self.data_featurized[normalize]['mean'], sdv=self.data_featurized[normalize]['sdv'])[0][0]
         return unormalized_feature
 
-    def get_target(self, mask_dims=[]):
-        test_dataset = {'data_x': [], 'data_y': [], 'names': []}
-        for oxide, value in [('Sr0.9Cs0.1Co0.9Nb0.1', 0.0101), ('Ba0.4Sr0.4Cs0.2Co0.6Fe0.3Mo0.1', 0.0108), ('Ba0.8Sr0.2Co0.6Fe0.2Nb0.2', 0.0123), ('Ba0.2Sr0.6Pr0.2Co0.6Fe0.3Nb0.1', 0.0150)]:
-            test_dataset['data_x'].append(
-                self.get_single_feature_from_str(oxide, normalize=700))
-            test_dataset['data_y'].append(value)
-            test_dataset['names'].append(oxide)
-
-        test_dataset['data_x'] = np.delete(
-            test_dataset['data_x'], mask_dims, -1)
-        return test_dataset
 
     @staticmethod
     def shuffle(dataset):
