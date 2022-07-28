@@ -4,7 +4,7 @@ This repo contains the source code of "*A combined ionic Lewis acid descriptor a
 ## Requirements
 The code is based on Python 3.8 (other Python 3+ versions may work as well). Before running the code, make sure all denepdencies are propoerly installed via `pip3 install -r requirements.txt`.
 
-## Run
+## Reproduction
 **To train the regression models** used in our paper, run `python train.py --model <model_name> --data <dataset> --output_dir <output_dir> --model_params <param_file>`.
 **arguments:**
 + `<model_name>`: options: `[ols, lasso, ridge, svr, rf, gpr, ann_1, ann_2, ann_3]`.
