@@ -1,5 +1,7 @@
 # MLORR
-This repo contains the source code of "*A combined ionic Lewis acid descriptor and machine-learning approach to prediction of efficient oxygen reduction electrodes for ceramic fuel cells*" (Accpeted by **Nature Energy**). In this study, we constructed a small but high-quality ABO3 perovskite dataset (`data/dataset.xlsx`), based on which we built up various regression models to explore the potential patterns hidden behind the data.
+This repo contains the source code of "[A combined ionic Lewis acid descriptor and machine-learning approach to prediction of efficient oxygen reduction electrodes for ceramic fuel cells](https://www.nature.com/articles/s41560-022-01098-3)" published in **Nature Energy**. In this study, we constructed a small but high-quality ABO3 perovskite dataset (`data/dataset.xlsx`), based on which we built up various regression models to explore the potential patterns hidden behind the data.
+
+Note: the ionic Lewis acid strength (ISA) values were referenced from "[Empirical Lewis acid strengths for 135 cations bonded to oxygen](https://pubmed.ncbi.nlm.nih.gov/28981002/)".
 
 ## Requirements
 The code is based on Python 3.8 (other Python 3+ versions may work as well). Before running the code, make sure all denepdencies are propoerly installed via `pip3 install -r requirements.txt`.
@@ -17,4 +19,3 @@ For example, `python train.py --model svr --data 700 --output_dir data/results -
 
 **To evaluate models** on the test set, run `python eval.py` with the same arguments.
 
-For more details and the full data, please refer to our paper.
